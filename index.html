@@ -1,73 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share file</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-</head>
-
-
-<body>
-
-    <nav class="navbar bg-light " style="background-color: #e3f2fd;">
-        <form class="container-fluid justify-content-start">
-            <!-- One drive -->
-            <button class="btn btn-outline-success me-2" type="button">
-                <a href="https://cuscctueduvn-my.sharepoint.com/:f:/g/personal/ldnminhd21174_cusc_ctu_edu_vn/EqQQ1Oc6CO5Mj9mtoUCiu_gBhoFRDGsQZMcXTnkkkMIRkA"
-                    class="list-group-item list-group-item-action active" aria-current="true">
-                    Documents 1
-                </a>
-            </button>
-            <!-- One drive 2 -->
-            <button class="btn btn-outline-success me-2" type="button">
-                <a href="https://cuscctueduvn-my.sharepoint.com/:f:/g/personal/ldnminhd21174_cusc_ctu_edu_vn/EqmikOtiIrNPrwP_UTwh1n4BOKarWwhRHqKSDyZ5KqgEgQ"
-                    class="list-group-item list-group-item-action active" aria-current="true">
-                    Documents 2
-                </a>
-            </button>
-            <!-- Google drive -->
-            <button class="btn btn-outline-success me-2" type="button">
-                <a href="https://drive.google.com/drive/folders/1cVGSJUEM--i1z84Sxk5BStme8XiHQ2Ec?usp=sharing"
-                    class="list-group-item list-group-item-action active" aria-current="true">
-                    Google drive
-                </a>
-            </button>
-            <!-- School 1-->
-            <button class="btn btn-outline-success me-2" type="button">
-                <a href="https://cuscctueduvn-my.sharepoint.com/:f:/g/personal/ldnminhd21174_cusc_ctu_edu_vn/EjfWWwEADAtEhyvBaYYLq4sBUB9SChWCyKTyOehmxh0B8Q?e=ubjOYq"
-                    class="list-group-item list-group-item-action active" aria-current="true">
-                    CTU Vip Pro
-                </a>
-            </button>
-            <!-- School 2 Onedrive -->
-            <button class="btn btn-outline-success me-2" type="button">
-                <a href="https://cuscctueduvn-my.sharepoint.com/:f:/g/personal/ldnminhd21174_cusc_ctu_edu_vn/EmxVzl8nhINNuYmkA-vqpEEB-rbWVvvSFziuarfvFKegkg?e=Vkf4jY"
-                    class="list-group-item list-group-item-action active" aria-current="true">
-                    CTU
-                </a>
-            </button>
-            <!-- Bonus -->
-            <button class="btn btn-outline-success me-2" type="button">
-                <a href="https://cuscctueduvn-my.sharepoint.com/:f:/g/personal/ldnminhd21174_cusc_ctu_edu_vn/EnPaPLIVbutKhktJpZttO2UBrPoQ3GUJcW-5bkT_HYXEBw?e=mcdQmL"
-                    class="list-group-item list-group-item-action active" aria-current="true">
-                    Bonus Vjp Pro Ultra Max
-                </a>
-            </button>
-
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>VIP only</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Xịn xò con bò</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">English for today</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <div class="container overflow-hidden text-center">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Special treatment today</h5>
+                <p class="card-text">
+                  <i id="daily-quote">Loading...</i>
+                </p>
+                <a href="#" id="copy-btn" class="btn btn-primary">Copy</a>
+              </div>
+              <div class="card-footer text-body-secondary" id="noti">
+              </div>
+            </div>
+          </div>
+          <div class="p-3">
+            <div class="list-group">
+              <a
+                href="https://drive.google.com/drive/folders/1Ze9L3fDX0Vju_ZqVOez-FVABnEBaNdlE?usp=sharing"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+                Public Folder
+              </a>
+              <a href="#" class="list-group-item list-group-item-action disabled"
+                >not available</a
+              >
+              <a href="#" class="list-group-item list-group-item-action disabled"
+                >not available</a
+              >
+              <a href="#" class="list-group-item list-group-item-action disabled"
+                >not available</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<iframe src="https://giphy.com/embed/5iKdMTST1mo0cYkQVx" width="480" height="231" frameBorder="0" class="giphy-embed" allowFullScreen>
-</iframe>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 
-</body>
+    <script>
+      function fetchDailyQuote() {
+        fetch("https://api.quotable.io/random")
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("daily-quote").innerText = data.content;
+          })
+          .catch((error) => console.error("Error fetching quote:", error));
+      }
 
+      // Sao chép nội dung vào clipboard
+      function copyToClipboard() {
+        const quoteText = document.getElementById("daily-quote").innerText;
+        const clipboard = new ClipboardJS("#copy-btn", {
+          text: function () {
+            return quoteText;
+          },
+        });
+
+        clipboard.on("success", function (e) {
+          document.getElementById("noti").innerText =
+            "Quote copied to clipboard!";
+          e.clearSelection();
+        });
+
+        clipboard.on("error", function (e) {
+          document.getElementById("noti").innerText =
+            "Error copying quote to clipboard.";
+        });
+      }
+
+      fetchDailyQuote();
+
+      // Gắn sự kiện cho nút "Copy"
+      document
+        .getElementById("copy-btn")
+        .addEventListener("click", copyToClipboard);
+    </script>
+  </body>
 </html>
